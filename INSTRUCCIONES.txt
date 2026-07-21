@@ -1,0 +1,6 @@
+Estos archivos corresponden al sitio web oficial de Fundación Forma.
+
+Suba todos los archivos de esta carpeta al repositorio:
+AdminForma/fundacion-forma-web
+
+No suba el archivo ZIP; primero descomprímalo y seleccione todos los archivos que están dentro de esta carpeta.
