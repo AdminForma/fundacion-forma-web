@@ -24,7 +24,7 @@ a{color:inherit}
 .button-dark{background:var(--ink);color:#fff}
 .button-light{border:1px solid var(--ink)}
 .hero-image{margin:0}
-.hero-image img{aspect-ratio:4/5;object-fit:cover;filter:grayscale(1);border-radius:180px 180px 14px 14px}
+.hero-image img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center;filter:grayscale(1);border-radius:120px 120px 14px 14px}
 .hero-image figcaption{background:var(--ink);color:#fff;padding:18px 22px;border-radius:0 0 14px 14px;font-weight:600}
 .section{max-width:var(--max);margin:auto;padding:108px 28px;border-top:1px solid var(--line)}
 .section h2{font-size:clamp(2.8rem,5.4vw,5.7rem)}
@@ -95,7 +95,7 @@ footer{grid-template-columns:1fr 1fr}
 .hero h1{font-size:3.25rem}
 .hero-actions{flex-direction:column}
 .button{width:100%}
-.hero-image img{aspect-ratio:1/1.2}
+.hero-image img{aspect-ratio:3/2}
 .statement{grid-template-columns:1fr}
 .section-number{margin-bottom:30px}
 .services{grid-template-columns:1fr}
