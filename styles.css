@@ -57,6 +57,20 @@ a{color:inherit}
 .photo-stack img:last-child{height:300px}
 .purpose-copy>p:not(.eyebrow){font-size:1.2rem;margin:30px 0}
 .purpose blockquote{margin:38px 0 0;padding:24px 0 0;border-top:1px solid var(--ink);font:600 1.4rem "Manrope"}
+.gallery-heading{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end;margin-bottom:48px}
+.gallery-heading>p{font-size:1.12rem;max-width:480px;margin:0 0 5px}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:155px;gap:14px}
+.gallery-item{grid-column:span 5;grid-row:span 3;position:relative;overflow:hidden;margin:0;border-radius:18px;background:#d9d9d4}
+.gallery-item.gallery-wide{grid-column:span 7}
+.gallery-item:nth-child(3),.gallery-item:nth-child(4),.gallery-item:nth-child(5){grid-column:span 4}
+.gallery-item:nth-child(6){grid-column:span 5}
+.gallery-item:nth-child(7){grid-column:span 7}
+.gallery-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .45s ease,transform .65s ease}
+.gallery-item:hover img,.gallery-item:focus-within img{filter:grayscale(0);transform:scale(1.025)}
+.gallery-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:65px 22px 20px;background:linear-gradient(transparent,#000c);color:#fff;font:700 1.05rem "Manrope"}
+.gallery-item:nth-child(2) img{object-position:center 48%}
+.gallery-item:nth-child(3) img{object-position:center 58%}
+.gallery-item:nth-child(6) img{object-position:center 62%}
 .campaign{max-width:none;padding-left:max(28px,calc((100vw - var(--max))/2 + 28px));padding-right:max(28px,calc((100vw - var(--max))/2 + 28px));background:var(--ink);color:#fff;display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}
 .campaign-intro>p:not(.eyebrow){font-size:1.16rem;max-width:620px;margin:30px 0}
 .campaign-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:34px}
@@ -109,6 +123,8 @@ footer a{text-decoration:none}
 .service:nth-child(2){border-right:0}
 .service:nth-child(-n+2){border-bottom:1px solid var(--ink)}
 .bridge{gap:42px}
+.gallery-heading{grid-template-columns:1fr;gap:24px}
+.gallery-grid{grid-auto-rows:130px}
 .campaign{gap:46px}
 .campaign-transparency{grid-template-columns:1fr}
 .campaign-note{grid-column:auto}
@@ -138,6 +154,10 @@ footer{grid-template-columns:1fr 1fr}
 .bridge-center{transform:none;border-radius:0!important}
 .photo-stack img:first-child{height:300px}
 .photo-stack img:last-child{height:230px}
+.gallery-grid{display:grid;grid-template-columns:1fr;grid-auto-rows:auto;gap:12px}
+.gallery-item,.gallery-item.gallery-wide,.gallery-item:nth-child(3),.gallery-item:nth-child(4),.gallery-item:nth-child(5),.gallery-item:nth-child(6),.gallery-item:nth-child(7){grid-column:auto;grid-row:auto;aspect-ratio:4/3}
+.gallery-item:nth-child(2),.gallery-item:nth-child(3),.gallery-item:nth-child(4){aspect-ratio:3/4}
+.gallery-item figcaption{padding:55px 18px 17px}
 .campaign{padding-left:20px;padding-right:20px}
 .campaign-progress{padding:24px 18px}
 .progress-heading{flex-direction:column;gap:8px}
